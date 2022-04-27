@@ -1,33 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Formulário</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>7 Days Of Code</title>
 </head>
 <body>
+    <nav>
+      <div class="sideMenu">
+        <img src="./imagens/menu.svg" alt="Menu Icon">
+      </div>
+      <div class="menu">
+        <div class="links">
+          <a href="#">Home</a>
+          <a href="#">Destinos</a>
+          <a href="#">Clientes</a>
+          <a href="#">Contato</a>
+        </div>
+        <div class="buttons">
+          <button class="signIn" href="./login/login.html">Entrar</button>
+          <button class="signUp" href="./cadastro/cadastro.html">Cadastrar</button>
+        </div>
+      </div>
+      
+    </nav>
+
     <main>
-        <section class="header">
-            <h1>Create new account</h1>
-            <span>Already A Member?<a class="login">Log In</a></span>
-        </section>
-        <section>
-            <form>
-            <article class="name">
-               <input  type="text" placeholder="First name">
-               <input  type="text" placeholder="Last name">
+      <section class="about-us">
+          <img src="./imagens/Traveling.svg">
+          <h1>Turismo</h1>
+      </section>
+
+      <section class="metrics">
+        <article class="metric">
+            <h2>100+</h2>
+            <span>Destinos</span>
+            <p>Temos mais de 100 destinos <br>
+             em todo o Brasil.</p>
             </article>
-            <article class="info">
-                <input  type="email" placeholder="Email">
-                <input  type="password" placeholder="Password">
-            </article>
-            <article class="button">
-                <button>Create account</button>
-            </article>
-           </form>
-        </section>
-    </main>
+          <article class="metric">
+            <h2>200+</h2>
+            <span>Colaboradores</span>
+            <p>Temos mais de 100 colaboradores <br>
+             que se preocupam com o bem estar dos <br>
+             nossos clientes.</p>
+          </article>
+          <article class="metric">
+            <h2>30K</h2>
+            <span>Seguidores</span>
+            <p>Temos mais de 30 mil <br>
+               seguidores nas redes sociais. <br>
+        </article>
+        <article class="metric">
+          <h2>500+</h2>
+          <span>Review 5 estrelas</span>
+          <p>Estamos orgulhosos de contar com <br>
+             mais de 500 reviews 5 estrelas em <br>
+              nossas viagens.</p>
+        </article>   
+      </section>
+
+      <section class="talents">
+          <button>Passagens Disponíveis!</button>
+          <h2>Está procurando um destino?</h2>
+          <p>Somos uma equipe 100% remota com pessoas do Brasil inteiro.</p>
+      </section>
+
+      <section class="vagas-abertas">
+        <h3>Design</h3>
+        <article class="vaga">
+              <h4 class="title">Product Designer</h4>
+              <div class="info">
+                <span>Full-time</span>
+                <span>Faixa salarial: R$7.000</span>
+              </div> 
+        </article>
+        <article class="vaga">
+              <h4 class="title">UX Designer</h4>
+              <div class="info">
+                <span>Full-time</span>
+                <span>Faixa salarial: R$6.000</span>
+              </div>
+        </article>
+              <h3>Desenvolvimento de Software</h3>
+              <article class="vaga">
+                <h4 class="title">Desenvolverdor(a) iOS</h4>
+                <div class="info">
+                  <span>Full-time</span>
+                  <span>Faixa salarial: R$8.000</span>
+                </div> 
+              </article>
+              <article class="vaga">
+                <h4 class="title">Desenvolverdor(a) Front-end</h4>
+                <div class="info">
+                  <span>Full-time</span>
+                  <span>Faixa salarial: R$7.000</span>
+                </div>
+              </article>
+              <article class="vaga">
+                <h4 class="title">Desenvolverdor(a) Back-end</h4>
+                <div class="info">
+                  <span>Full-time</span>
+                  <span>Faixa salarial: R$8.000</span>
+                </div>
+              </article>
+      </section>
+
+      <section class="depoimento">
+              <span>Veja o que o nossos clientes falam sobre nós</span>
+              <p>OptimusTech se importa com o bem estar dos seus clientes e <br>
+                 sempre procura nos dar todo tipo de auxílio possível.</p>
+                <img src="./imagens/Avatar.png">
+                <h4>Júlia Castro</h4>
+                <span class="cargo">Desenvolvedora Web</span>
+      </section>
+    </main> 
+
+    <footer>
+         <h2>Acompanhe nossas oportunidades</h2>
+         <span>Seja o primeiro a saber quando novas vagas serão abertas!</span>
+        <form>
+         <input id="placeholder-text" type="email" placeholder="Seu e-mail">
+         <button>Cadastrar</button>
+        </form>
+       <span>© 2022 OptimusTech. Todos os direitos reservados.</span>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

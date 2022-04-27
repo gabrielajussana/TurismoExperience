@@ -1,113 +1,403 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+:root {
+  --text-color: #667085;
+  --main-color: #E88A1A;
+  --title-color: #101828;
+}
 
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
 body{
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    background-image: url("http://www.daniellenoce.com.br/wp-content/uploads/2017/07/9-vistas-incriveis-no-rio-de-janeiro-danielle-noce-9.jpg");
-    background-repeat: no-repeat;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 100vh;
 }
 
-main{
-    width: 50%;
-    height: 80%;
-    background-color: rgba(10,23,55,0.5);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
+.logo{
+  display: flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items: center;
+  margin-right: -50px;
+}
+.logo img{
+  width: 40px;
+  height: 40px;
+}
+.logo span{
+  margin-left: 5px;
+  color: var(--text-color);
+  font-size: 25px;
+  font-family: 'Inter', sans-serif;
 }
 
-span{
-    display: flex;
-    gap: 0.5rem;
-    color: #b8babd;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    text-decoration: none;
-    font-weight: 300;
+nav{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-size: 16px;
+
+}
+.links{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  height: 32px;
 }
 
-.header{
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
+
+.links a{
+  text-decoration: none;
+  color: var(--text-color);
 }
 
-h1{
-    font-size: 40px;
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
+.buttons{
+  display: flex;
+  flex-direction:row;
+  margin-left: 300px;
+  font-size: 16px;
 }
-
-.login{
-    color: #E88A1A;
-    gap: 1rem;
-}
-
-input{
-    border: none;
-    color: #fff;
-    background-color: #30475E;
-    border-radius: 5px;
-    height: 40px;
-    width: 200px;
-    padding-left: 10px;
-}
-input:hover{
-   border: 2px solid #E88A1A;
-}
-
-input::placeholder {
-    color: #b8babd;
-    font-size: 10px;
-    margin: 0;
-}
-
-.name{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    padding: 1rem 0;
-}
-
-.info{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.info input{
-    width: 420px;
-}
-
-.button{
-    display: flex;
-    padding: 10px;
-    align-items: center;
-    justify-content:center;
-}
-
 button{
-    width: 200px;
-    height: 40px;
-    border: none;
-    background-color: #E88A1A;
-    color: #222831;
-    border-radius: 5px;
+  cursor: pointer;
+  border-radius: 8px;
+  background: none;
+  color:var(--main-color);
+  border: none;
+  width: 150px;
+  height: 44px;
 }
 
-button:hover{
-    color: #E88A1A;
-    background-color: #222831;
-    border: 2px solid #fff;
-    cursor: pointer;
+ .signUp{
+  background-color: var(--main-color);
+  box-shadow: 0px 1px 2px rgba(105, 89, 205, 0.05);
+  color: #fff;
+  margin-left: 20px;
+}
+
+.menu{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content:space-around;
+}
+
+.sideMenu{
+  display: none;
+  visibility: hidden;
+}
+
+.menu:active {
+  right:0;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s;
+}
+
+.sideMenu img {
+  position: relative;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.about-us
+{
+  padding: 6rem 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.about-us img{
+  width: 40%;
+}
+
+.about-us span{
+  color: var(--main-color);
+}
+
+.about-us h1{
+  font-size: 2rem;
+  color: var(--title-color);
+  text-align: center;
+}
+
+.about-us p {
+  color: var(--text-color);
+  max-width: 50%;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.metrics{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 3rem;
+  padding: 0 8rem;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.metric h2{
+  color: var(--main-color);
+  font-size: 3rem;
+}
+.metric span{
+   color: var(--title-color);
+   font-size: 14px;
+}
+.metric p{
+  font-size: 12px;
+  color: var(--text-color);
+}
+
+
+.talents{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  padding-top: 8rem;
+  gap: 1rem;
+}
+
+.talents button{
+  width: 300px;
+  height: 28px;
+  background:rgba(105, 89, 205, 0.05);
+  color: var(--main-color);
+  border-radius: 30px;
+  border: none;
+  font-weight: 500;
+}
+
+.talents h2{
+  color: #101828;
+  font-size: 40px;
+  margin: 10px;
+}
+
+.talents p{
+  color:var(--text-color);
+  font-size:20px;
+  font-weight: 400;
+}
+
+.img-talentos img{
+  margin-top: 2rem;
+  width: 80%;
+}
+
+.vagas-abertas{
+  padding-top: 4rem;
+}
+
+.vagas-abertas h3{
+  color:var(--title-color);
+  display: block;
+  max-width: 50%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+
+}
+
+.vaga{
+  border: 1px solid #EAECF0;
+  border-radius: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: var(--title-color);
+  padding: 1rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  max-width: 50%;
+}
+
+.vaga h4{
+  font-size: 16px;
+}
+
+.vaga .info{
+  margin-top: 1rem;
+  font-size: 90%;
+  color: var(--text-color);
+  display: flex;
+  gap: 2rem;
+}
+
+.depoimento{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  background: rgba(105, 89, 205, 0.05);
+  padding: 3rem 2rem;
+  max-width: 80%;
+  margin: 8rem auto;
+}
+
+.depoimento span{
+  color: var(--main-color);
+  font-weight: 500;
+  text-align: center;
+}
+
+.depoimento p{
+  color: var(--title-color);
+  font-weight: 500;
+  text-align: center;
+  max-width: 70%;
+  margin: 2rem 0;
+}
+
+
+.depoimento h4{
+  color: var(--title-color);
+  margin: 0.5rem 0;
+  font-weight: 400;
+}
+
+.depoimento .cargo{
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #F9FAFB;
+  text-align: center;
+  padding: 6rem 1rem;
+  gap: 1.5rem;
+}
+
+
+footer h2{
+  color: var(--title-color);
+}
+
+footer form{
+  display: flex;
+  justify-content:space-between;
+}
+
+footer input {
+  outline: none;
+  background: #fff;
+  border: 1px solid #EAECF0;
+  border-radius: 5px;
+  width: 12rem;
+  margin-right: 1rem;
+}
+
+footer button{
+  width: 116px;
+  height: 40px;
+  border: none;
+  color:#fff;
+  background: var(--main-color);
+  border-radius: 5px;
+}
+
+footer span{
+  color: var(--text-color)
+}
+
+#placeholder-text::placeholder{
+  color: var(--text-color);
+  font-size: 16px;
+  padding-left: 12px;
+}
+
+@media screen and (max-width: 920px) {
+  .metrics {
+    padding: 0 4rem;
+  }
+}
+
+
+@media screen and (max-width: 850px) {
+  .metrics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .metric {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .metric span {
+    max-width: 280px;
+    text-align: center;
+  }
+
+  .about-us p {
+    max-width: 70%;
+  }
+
+  .vaga {
+    max-width: 70%;
+  }
+  
+  .vagas-abertas h3{
+    max-width: 70%;
+  }
+
+  .depoimento h2 {
+    max-width: 100%;
+    font-size: 120%;
+  }
+
+  .sideMenu {
+    display: initial;
+    visibility: visible;
+  }
+
+  .links {
+    margin: 2rem 0;
+  }
+
+  .links a{
+    margin-right: 0;
+  }
+
+  .menu {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -1000px;
+    height: 100vh;
+    background: #F9FAFB;
+    width: 15rem;
+    padding: 2rem;
+    transition: all 2s;
+  }
+
+  .menu .links, .menu .buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
