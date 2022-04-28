@@ -69,7 +69,6 @@ nav{
 }
 button{
   cursor: pointer;
-  border-radius: 8px;
   background: none;
   color:var(--main-color);
   border: none;
@@ -89,6 +88,7 @@ button a{
 
 .signUp a{
   color: #fff;
+  border-radius: 8px;
 }
 
 .signIn a{
@@ -197,43 +197,6 @@ button a{
   width: 80%;
 }
 
-.vagas-abertas{
-  padding-top: 4rem;
-}
-
-.vagas-abertas h3{
-  color:var(--title-color);
-  display: block;
-  max-width: 50%;
-  margin: 0 auto;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  font-weight: bold;
-
-}
-
-.vaga{
-  border: 1px solid #EAECF0;
-  border-radius: 16px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: var(--title-color);
-  padding: 1rem;
-  margin: 0 auto;
-  margin-bottom: 1rem;
-  max-width: 50%;
-}
-
-.vaga h4{
-  font-size: 16px;
-}
-
-.vaga .info{
-  margin-top: 1rem;
-  font-size: 90%;
-  color: var(--text-color);
-  display: flex;
-  gap: 2rem;
-}
 
 .depoimento{
   display: flex;
@@ -243,6 +206,7 @@ button a{
   padding: 3rem 2rem;
   max-width: 80%;
   margin: 8rem auto;
+  border-radius: 8px;
 }
 
 .depoimento span{
@@ -392,4 +356,22 @@ footer span{
     flex-direction: column;
     width: 100%;
   }
+}
+
+.places{
+  display: flex;
+  justify-content:center;
+}
+
+.carousel{
+  width: 70%;
+  height:400px;
+}
+.carousel-item{
+  width: 700px;
+  height: 400px;
+}
+
+figcaption{
+  color: var(--title-color);
 }
