@@ -77,11 +77,22 @@ button{
   height: 44px;
 }
 
+button a{
+  text-decoration: none;
+}
+
  .signUp{
   background-color: var(--main-color);
   box-shadow: 0px 1px 2px rgba(105, 89, 205, 0.05);
-  color: #fff;
   margin-left: 20px;
+}
+
+.signUp a{
+  color: #fff;
+}
+
+.signIn a{
+  color: var(--main-color);
 }
 
 .menu{
@@ -89,25 +100,6 @@ button{
   flex-direction:row;
   align-items: center;
   justify-content:space-around;
-}
-
-.sideMenu{
-  display: none;
-  visibility: hidden;
-}
-
-.menu:active {
-  right:0;
-  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.5s;
-}
-
-.sideMenu img {
-  position: relative;
-  z-index: 1;
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
 }
 
 .about-us
@@ -129,7 +121,7 @@ button{
 }
 
 .about-us h1{
-  font-size: 2rem;
+  font-size: 60px;
   color: var(--title-color);
   text-align: center;
 }
@@ -168,7 +160,7 @@ button{
 }
 
 
-.talents{
+.ticket{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -178,7 +170,7 @@ button{
   gap: 1rem;
 }
 
-.talents button{
+.ticket button{
   width: 300px;
   height: 28px;
   background:rgba(105, 89, 205, 0.05);
@@ -188,13 +180,13 @@ button{
   font-weight: 500;
 }
 
-.talents h2{
+.ticket h2{
   color: #101828;
   font-size: 40px;
   margin: 10px;
 }
 
-.talents p{
+.ticket p{
   color:var(--text-color);
   font-size:20px;
   font-weight: 400;
