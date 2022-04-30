@@ -17,24 +17,6 @@ body{
   height: 100vh;
 }
 
-.logo{
-  display: flex;
-  flex-direction:row;
-  justify-content:center;
-  align-items: center;
-  margin-right: -50px;
-}
-.logo img{
-  width: 40px;
-  height: 40px;
-}
-.logo span{
-  margin-left: 5px;
-  color: var(--text-color);
-  font-size: 25px;
-  font-family: 'Inter', sans-serif;
-}
-
 nav{
   display: flex;
   flex-direction: row;
@@ -313,13 +295,6 @@ footer span{
     max-width: 70%;
   }
 
-  .vaga {
-    max-width: 70%;
-  }
-  
-  .vagas-abertas h3{
-    max-width: 70%;
-  }
 
   .depoimento h2 {
     max-width: 100%;
@@ -370,8 +345,4 @@ footer span{
 .carousel-item{
   width: 700px;
   height: 400px;
-}
-
-figcaption{
-  color: var(--title-color);
 }
