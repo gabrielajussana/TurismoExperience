@@ -19,11 +19,29 @@ nav{
   gap: 5rem;
 }
 
+.links a:hover,
+.buttons a:hover{
+  text-decoration: none;
+}
+
+.links a:hover{
+  color: var(--main-color);
+}
+
 .buttons{
   display: flex;
   flex-direction:row;
   margin-left: 30rem;
   font-size: 1.3rem;
+}
+
+.signUp{
+  margin-left: 1rem;
+}
+
+.signUp:hover{
+  border: 1px solid var(--main-color);
+  border-radius: 0.8rem;
 }
 
 .menu{
