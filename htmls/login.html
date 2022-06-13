@@ -4,27 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/login.css">
     <title>Formulário</title>
 </head>
 <body>
     <main>
         <section class="header">
-            <h1>Criar nova conta</h1>
-            <span>Já tem uma conta?<a href="../login/login.html" class="login">Entrar</a></span>
+            <h1> Turismo Experience</h1>
         </section>
         <section>
             <form>
-            <article class="name">
-               <input  type="text" placeholder="Nome">
-               <input  type="text" placeholder="Sobrenome">
-            </article>
             <article class="info">
-                <input  type="email" placeholder="Email">
-                <input  type="password" placeholder="Senha">
+                <label for="email" class="sr-only">Digite o seu email</label>
+                <input  type="email" name="email" placeholder="Email">
+                <label for="password" class="sr-only">Digite sua senha</label>
+                <input  type="password" name="password" placeholder="Senha">
             </article>
             <article class="button">
-                <button>Cadastrar</button>
+                <button class="orange">Entrar</button>
             </article>
            </form>
         </section>

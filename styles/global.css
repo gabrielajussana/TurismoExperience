@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+html {
+  --text-color: #667085;
+  --main-color: #E88A1A;
+  --title-color: #101828;
+  --white: #fff;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
+.sr-only{
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/*LINKS*/
+.link{
+  outline: none;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+/*INPUT AND BUTTONS*/
+
+input{
+  outline: none;
+  border: none;
+  color: #fff;
+  background-color: #30475E;
+  border-radius: 0.8rem;
+  height: 3rem;
+  width: 20rem;
+  padding-left: 1rem;
+}
+
+input:hover{
+  border: 2px solid #E88A1A;
+}
+
+input::placeholder {
+  color: #b8babd;
+  font-size: 1rem;
+  margin: 0;
+}
+
+button{
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 14rem;
+  height: 3rem;
+  outline: none;
+}
+
+button.orange{
+  background: var(--main-color);
+  color: var(--white);
+  border-radius: 0.8rem;
+}
+
+button.orange a{
+  color: var(--white);
+}
+
+
+button.transparent{
+  background: none;
+  color:var(--main-color);
+}
+
+button.transparent a{
+  color: var(--main-color);
+}
+
+button:hover{
+  opacity: 0.9;
+}
